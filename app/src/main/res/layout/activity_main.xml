@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_compass"
+        android:layout_width="248dp"
+        android:layout_height="269dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="179dp"
+        app:srcCompat="@drawable/compass" />
+
+    <TextView
+        android:id="@+id/tv_degrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_compass"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:padding="16dp"
+        android:text="@string/the_andle_is_displayed_here"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
